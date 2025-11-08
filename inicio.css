@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tela-inicial {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb28YHR26oRcxZK1eSK7O45ujAlYHnJzIghjDf48Zqzoo-E7YeBrpyv7eVldaw176b7mkZiHVg9qbVW4Lt_mrkJbPuT3TiA6JIVfHibtJwFSwpK958SmM9Es1NyrzOL781yvuA4yZjKmii/s1600/santosfc.jpg'); /* troque pela imagem desejada */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela-inicial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* escurece a imagem de fundo */
+}
+
+.conteudo-inicial {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.conteudo-inicial h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.conteudo-inicial p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.botao-entrar {
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.botao-entrar:hover {
+  background-color: #000;
+  color: #e9c600;
+  border: 1px solid #e9c600;
+}

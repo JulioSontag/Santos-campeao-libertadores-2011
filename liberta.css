@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#scrollBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background: linear-gradient(90deg, #000000, #ffffff);
+  transition: width 0.1s ease-out;
+  z-index: 9999;
+  border-radius: 0 5px 5px 0;
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.div-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-header{
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+
+.header img{
+  justify-content: start;
+  height: 140px;
+  width: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 8px;
+  transition: color 0.5s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background-color: #e9c600;
+  transition: width 0.7s ease;
+  transform: translateX(-50%);
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #e9c600;
+}
+
+
+
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border-left: 5px solid #000000;
+  background-color: #f5f2f2;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+#banner-historia {
+  background-image: url('https://s2-ge.glbimg.com/U7M-zi1LGYFCl4HH19Sof5hga8U=/0x0:910x607/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/2/V/wMCj2KTXAhwRk2YAkUyw/20170627120249-0.jpeg'); /* troque pelo nome da sua imagem */
+  background-size: cover;
+  background-position: 100% 35%;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#banner-historia::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+
+.banner-conteudo {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#banner-historia h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#banner-historia p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.tituloHistoria{
+  color: white;
+}
+
+p {
+  text-indent: 10px; 
+  justify-content: center;
+  
+}
+
+#banner-fase-grupos {
+  background-image: url('https://static.gazetaesportiva.com/uploads/imagem/2020/06/07/00371994-1-1024x683.jpg'); /* troque pelo nome da sua imagem */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#banner-fase-grupos::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#banner-fase-grupos .banner-conteudo {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#banner-fase-grupos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#banner-fase-grupos p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.tituloInicioFG{
+  color: white;
+}
+blockquote{
+  text-align: center;
+}
+
+#banner-mata-mata {
+  background-image: url('https://media.gazetadopovo.com.br/2011/05/94dc3e8415a2d0189c266b8a48b5bba4-gpLarge.jpg'); 
+  background-size: cover;
+  background-position: 100% 25%;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#banner-mata-mata::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  color: white;
+}
+
+#banner-mata-mata .banner-conteudo {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+#banner-mata-mata h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#banner-mata-mata p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+}
+
+.tituloMataMata{
+  color: white;
+}
+.linha1{
+  color: white;
+}
+blockquote{
+  font-style: italic;
+}
+
+#banner-finalJogo1 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Pe%C3%B1arol_vs_Santos_2011-06-15_-_4.jpg'); 
+  background-position: 100% 75%;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#banner-finalJogo1::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+#banner-finalJogo1 p{
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+}
+.banner-conteudoFinal {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Final1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+#banner-batalhaFinal {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb28YHR26oRcxZK1eSK7O45ujAlYHnJzIghjDf48Zqzoo-E7YeBrpyv7eVldaw176b7mkZiHVg9qbVW4Lt_mrkJbPuT3TiA6JIVfHibtJwFSwpK958SmM9Es1NyrzOL781yvuA4yZjKmii/s1600/santosfc.jpg'); 
+  background-size: cover;
+  background-position: 100% 60%;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#banner-batalhaFinal p{
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+}
+
+#banner-batalhaFinal::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.banner-conteudoFinal {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.Final1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-item video {
+  width: 100%;  
+  height: auto; 
+  border-radius: 5px;
+}
+
+.youtube-video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 8px;
+    }
